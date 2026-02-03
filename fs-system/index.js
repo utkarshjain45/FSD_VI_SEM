@@ -31,4 +31,6 @@ const fs = require("fs");
 
 // fs.appendFileSync("./abes.txt", ` and PHD`)
 
-fs.appendFile("./abes.txt", ` Honours`, () => {});
+// fs.appendFile("./abes.txt", ` Honours`, () => {});
+
+fs.cpSync("./abes.txt", "./abes-copy.txt");
