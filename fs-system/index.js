@@ -5,11 +5,30 @@ const fs = require("fs");
 // console.log(res)
 
 // fs.writeFile("./abes.txt", "We are Coding", () => {})
-fs.readFile("./abes.txt", "utf-8", (err, result) => {
-    if(err){
-        console.log("Error:", err);
-    }
-    else{
-        console.log(result);
-    }
-});
+    // fs.readFile("./abes.txt", "utf-8", (err, result) => {
+        //     if(err){
+            //         console.log("Error:", err);
+            //     }
+            //     else{
+                //         console.log(result);
+                //     }
+                // });
+                
+// fs.writeFileSync("./a.txt", "This is A")
+// const res = fs.readFileSync("./a.txt", "utf-8")
+// console.log(res)
+
+// fs.writeFile("./b.txt", "This is B", () => {})
+// fs.readFile("./b.txt", "utf-8", (err, result) => {
+//     if(err){
+//         console.log("Error:", err);
+//     }
+//     else{
+//         console.log(result);
+//     }
+// });
+
+
+// fs.appendFileSync("./abes.txt", ` and PHD`)
+
+fs.appendFile("./abes.txt", ` Honours`, () => {});
