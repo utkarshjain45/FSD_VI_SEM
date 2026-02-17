@@ -27,6 +27,14 @@ const fs = require("fs");
 //         console.log(result);
 //     }
 // });
+// fs.readFile("./b.txt", "utf-8", (err, result) => {
+//     if(err){
+//         console.log("Error:", err);
+//     }
+//     else{
+//         console.log(result);
+//     }
+// });
 
 
 // fs.appendFileSync("./abes.txt", ` and PHD`)
@@ -38,3 +46,14 @@ const fs = require("fs");
 fs.cp("./abes.txt", "./abes-copy.txt", (err) => {
     console.log(err);
 });
+
+// fs.unlinkSync("./abes.txt")
+
+// fs.unlink("./abes.txt", (err) => {
+//     if(err){
+//         console.log("Error:", err);
+//     }
+//     else{
+//         console.log("File Deleted");
+//     }
+// });
