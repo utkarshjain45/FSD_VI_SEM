@@ -43,9 +43,9 @@ const fs = require("fs");
 
 // fs.cpSync("./abes.txt", "./abes-copy.txt");
 
-fs.cp("./abes.txt", "./abes-copy.txt", (err) => {
-    console.log(err);
-});
+// fs.cp("./abes.txt", "./abes-copy.txt", (err) => {
+//     console.log(err);
+// });
 
 // fs.unlinkSync("./abes.txt")
 
@@ -57,3 +57,14 @@ fs.cp("./abes.txt", "./abes-copy.txt", (err) => {
 //         console.log("File Deleted");
 //     }
 // });
+
+const os = require('os');
+
+console.log("System Platform", os.platform())
+console.log("User Info", os.userInfo())
+console.log("CPU", os.arch())
+console.log("Free Memory", os.freemem())
+console.log("Total Memory", os.totalmem())
+console.log("UpTime", os.uptime())
+console.log("UpTime", os.homedir())
+console.log("UpTime", os.hostname())
