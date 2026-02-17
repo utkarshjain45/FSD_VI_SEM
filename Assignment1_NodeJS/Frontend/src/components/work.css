@@ -1,0 +1,114 @@
+.work-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
+  text-align: center;
+}
+
+.work-heading {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Result Area Styling */
+.result-area {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.result-box {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.result-title {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Specific styling for simple text results (Memory/CPU) */
+.simple-result {
+  font-size: 2rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Specific styling for the User Info Card */
+.info-card {
+  text-align: left;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.info-value {
+  font-family: 'Courier New', monospace; /* Monospace for technical feel */
+  color: #333;
+  background: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.loading-text {
+  color: #888;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

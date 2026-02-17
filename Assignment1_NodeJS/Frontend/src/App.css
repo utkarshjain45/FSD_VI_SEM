@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 80px;
+}
+
+.logo {
+  height: 60px; /* Adjust based on your logo size */
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.link:hover {
+  color: #d32f2f; /* ABES Red-ish color */
+}
+
+/* Home Component Styles */
+.home-container {
+  display: flex;
+  height: calc(100vh - 80px); /* Full height minus navbar */
+  align-items: center;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Work Component Styles */
+.work-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.work-heading {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-evenly; /* Equally spaced */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
