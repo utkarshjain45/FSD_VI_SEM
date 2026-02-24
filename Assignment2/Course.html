@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Courses - ABES Engineering College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 60px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .nav-links button {
+            padding: 8px 18px;
+            border: none;
+            background-color: #b22222;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-links button:hover {
+            background-color: #8b0000;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #b22222;
+            margin-bottom: 30px;
+        }
+
+        .course-list {
+            list-style-type: disc;
+            font-size: 22px;
+            color: #333;
+            text-align: left;
+        }
+
+        .course-list li {
+            margin: 10px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .course-list {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="abes.png" alt="ABES Logo">
+        </div>
+
+        <div class="nav-links">
+            <a href="Home.html"><button>Home</button></a>
+            <a href="Course.html"><button>Course</button></a>
+            <a href="Login.html"><button>Login</button></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Our Courses</h1>
+
+        <ul class="course-list">
+            <li>BTech</li>
+            <li>MTech</li>
+            <li>PhD</li>
+        </ul>
+    </div>
+
+</body>
+</html>
